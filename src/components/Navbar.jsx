@@ -32,12 +32,13 @@ export default function Navbar() {
 
     return (
         <Root>
-            <MenuItem onClick={()=>goTo('/')}>MOVIE APP </MenuItem>
-            <MenuItem onClick={()=>goTo('/favs')}>My favourites <StarFilled /></MenuItem>
+            <MenuItem onClick={() => goTo('/')}>MOVIE APP </MenuItem>
+            <MenuItem onClick={() => goTo('/favs')}>My favourites <StarFilled /></MenuItem>
             <MenuItem>
-                <Searchbar /> 
+                <Searchbar />
             </MenuItem>
-            <MenuItem><GithubOutlined  onClick={()=>goTo('/favs')}/></MenuItem>
+            <MenuItem><GithubOutlined onClick={() => window.open("https://github.com/lulemc/movie-app", "_blank", "noreferrer")
+            } /></MenuItem>
         </Root>
     )
 }
