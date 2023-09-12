@@ -57,6 +57,7 @@ export default function MovieList() {
         }
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
+        /* eslint-disable */
     }, [searchText, isLoading]);
 
     return (

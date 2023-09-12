@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
 import { getMovieById } from '../services/movieService';
 import styled from 'styled-components'
-import { Divider, Image, Skeleton} from 'antd';
+import { Divider, Image, Skeleton } from 'antd';
 import FavouriteButton from '../components/FavouriteButton';
 
 const Root = styled.div`
@@ -51,6 +51,7 @@ export default function MovieDetails() {
 
     useEffect(() => {
         fetchData()
+        /* eslint-disable */
     }, [imdbID])
 
     return (
