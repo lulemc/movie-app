@@ -35,7 +35,6 @@ export default function MovieList() {
                     setError(res.Error)
                 } else {
                     dispatch(loadResults(res.Search))
-
                 }
             });
         } catch (error) {
